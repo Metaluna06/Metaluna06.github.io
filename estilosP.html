@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Estilos</title>
+        <style>
+        /* Para acceder a las clases uso el '.' */
+        .bloque{
+            color:red;
+            font-size: 20px;
+        }
+        /* Para acceder al atributo id uso '#'' */
+        #bloque1{
+            background-color: green;
+            
+            height: 200px;
+            width: 200px;
+        }
+        
+        #bloque2{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+         /* Para acceder a las etiquetas uso su nombre */
+        body{
+            background-color: black;
+        }
+    </style>
+    </head>
+    <body>
+      
+        <div id="bloque1" class="bloque" onclick="func_bloque('bloque1');">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab iusto qui, placeat quasi totam corrupti esse molestias accusantium ipsa ipsum eum iure temporibus magni ea ipsam nostrum libero modi hic.</p>
+        </div>
+        <div id="bloque2" class="bloque" onclick="func_bloque('bloque2');">
+            <p>Esto es el bloque 2</p>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2012/10/25/23/52/wolf-62898_960_720.jpg" alt="Es una imagen de un lobo">
+
+        <script>
+            function func_bloque(nombre_id){
+                alert(nombre_id);
+            }
+        </script> 
+    </body>
+</html>
